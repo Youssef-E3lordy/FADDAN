@@ -10,16 +10,16 @@ FADDAN turns row-by-row crop observations into mission summaries, a three-layer 
 |---|---|---|
 | 0.1.0 prototype | Flutter source for Android + Web, compiled Web bundle | 12 tests passing, analyzer clean, Chrome interaction checks |
 
-## العربية: أجربه إزاي؟
+## Quick start
 
-نسخة الويب **مش مشروع ويب منفصل**. هي نفس كود Flutter الموجود في `lib/`، واتعمل له compile عشان يشتغل في المتصفح. مش محتاج تكون web developer ولا تتعلم React أو JavaScript عشان تعدل الشاشات. عدّل Dart كالمعتاد وبعدها ابني نسخة الويب من جديد.
+The Web version is **not a separate web project**. It is the same Flutter code in `lib/`, compiled to run in the browser. You do not need to be a web developer or learn React or JavaScript to edit the screens. Edit Dart as usual, then rebuild the Web bundle.
 
-- لو Flutter عندك: شغّل `flutter pub get` وبعدها `flutter run -d chrome`.
-- لو عايز تجرب النسخة المبنية بدون Flutter: افتح terminal في فولدر المشروع وشغّل `python -m http.server 8080 --directory web_preview`، وبعدها افتح `http://localhost:8080`.
-- على Windows لو `python` مش معروف، جرّب `py -m http.server 8080 --directory web_preview`.
-- متفتحش `index.html` بدبل كليك. التطبيق محتاج local HTTP server، مش `file://`.
-- عشان APK: وصل موبايل أندرويد مع USB debugging، شغّل `flutter run`، أو استخدم `flutter build apk --release`.
-- البيانات تجريبية بالكامل، ومفيش رش أو حركة روبوت من التطبيق. اختار **Agronomist** لتجربة حفظ مراجعة محلية.
+- If you have Flutter: run `flutter pub get`, then `flutter run -d chrome`.
+- To try the prebuilt bundle without Flutter: open a terminal in the project folder and run `python -m http.server 8080 --directory web_preview`, then open `http://localhost:8080`.
+- On Windows, if `python` is not recognized, try `py -m http.server 8080 --directory web_preview`.
+- Do not double-click `index.html`. The app needs a local HTTP server, not `file://`.
+- For the APK: connect an Android phone with USB debugging and run `flutter run`, or use `flutter build apk --release`.
+- All data is simulated, and the app sends no spray or robot-motion commands. Choose **Agronomist** to try saving a local review.
 
 ## Screenshots
 
@@ -214,3 +214,4 @@ This repository covers the Flutter client prototype. It does not claim to implem
 ## Project notes
 
 English-first UI. The provisional FADDAN name and simple leaf mark remain in this version; alternative branding is outside this code handoff. No project-wide open-source license has been chosen. Keep third-party license notices when distributing; the bundled Roboto font license is in `assets/fonts/Roboto_LICENSE.txt`.
+
