@@ -1,0 +1,3 @@
+# Keep the repository's primary language focused on authored Dart code.
+web_preview/** linguist-generated=true
+pubspec.lock linguist-generated=true

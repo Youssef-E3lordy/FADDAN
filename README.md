@@ -87,6 +87,8 @@ No `.env`, backend URL, credentials, API key or Firebase project is required for
 python -m http.server 8080 --directory web_preview
 ```
 
+Alternatively, run the included helper with `python scripts/serve_web.py` (it binds only to this computer by default).
+
 Open **http://localhost:8080** in Chrome. Stop the server with Ctrl+C. If port 8080 is occupied, use 8081 and open that port instead. Python 3 is required for this command. This server is for local demonstration, not production hosting.
 
 To try it from a phone on the same trusted Wi-Fi, serve on your laptop and open `http://YOUR_LAPTOP_LAN_IP:8080` on the phone. Your firewall must allow that connection. Do not expose this development server to the internet. Separate browsers and devices have separate local drafts.
